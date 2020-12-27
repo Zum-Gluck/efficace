@@ -4,8 +4,8 @@ const { merge } = require('webpack-merge');
 const common = require('./common.config')
 
 module.exports = merge(common, {
-  entry: './src/main.js',   //入口
-  output: { //出口
+  entry: './src/main.js',
+  output: {
     path: path.join(__dirname, '../dist'),
     filename: 'bundle.js',
   },

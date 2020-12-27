@@ -6,7 +6,7 @@ const common = require('./common.config')
 
 module.exports = merge(common, {
   devtool: 'source-map',
-  entry: './src/package/index.js',//入口文件，就是上步骤的src目录下的index.js文件，
+  entry: './src/package/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',

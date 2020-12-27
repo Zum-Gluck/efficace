@@ -16,11 +16,11 @@ module.exports = {
       {
         test: /\.less$/,
         use: [{
-          loader: 'style-loader' // creates style nodes from JS strings
+          loader: 'style-loader'  
         }, {
-          loader: 'css-loader' // translates CSS into CommonJS
+          loader: 'css-loader' 
         }, {
-          loader: 'less-loader' // compiles Less to CSS
+          loader: 'less-loader'  
         }]
       },
       {
@@ -30,7 +30,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 2222,
-              name: "img/[name].[hash:8].[ext]" // 图片命名方式
+              name: "img/[name].[hash:8].[ext]"  
             }
           }
         ]
