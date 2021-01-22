@@ -16,11 +16,11 @@ module.exports = {
       {
         test: /\.less$/,
         use: [{
-          loader: 'style-loader'  
+          loader: 'style-loader'
         }, {
-          loader: 'css-loader' 
+          loader: 'css-loader'
         }, {
-          loader: 'less-loader'  
+          loader: 'less-loader'
         }]
       },
       {
@@ -30,7 +30,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 2222,
-              name: "img/[name].[hash:8].[ext]"  
+              name: "img/[name].[hash:8].[ext]"
             }
           }
         ]
@@ -48,6 +48,10 @@ module.exports = {
       {
         test: /\.vue$/,
         use: ['vue-loader']
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader'
       }
     ]
   }

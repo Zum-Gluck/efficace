@@ -1,8 +1,8 @@
 <template>
 	<div>
-    <Swiper></Swiper>
-    <SwiperItem></SwiperItem>
-  </div>
+		<Swiper></Swiper>
+		<SwiperItem></SwiperItem>
+	</div>
 </template>
 
 <script>
